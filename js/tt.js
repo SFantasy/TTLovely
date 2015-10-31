@@ -2,7 +2,7 @@
   var tt = document.getElementById('tt');
   var num = 0;
 
-  tt.onclick = function () {
+  tt.addEventListener('touchend', function () {
     num++;
 
     if (num % 2 == 0) {
@@ -10,5 +10,5 @@
     } else {
       tt.classList.add('active');
     }
-  };
+  });
 })();
